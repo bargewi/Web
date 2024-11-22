@@ -1,0 +1,21 @@
+                    setTimeout(() => {
+
+                       outputElement.innerHTML += "Success: conected!\n";
+                        document.getElementById("linkButtons").style.display = "flex"; // Show buttons
+                    }, 2000);
+                } else {
+                    outputElement.innerHTML += "Unknown command. Type 'Russo' to proceed.\n";
+                }
+
+                // Scroll to the bottom to show the latest output
+                outputElement.scrollTop = outputElement.scrollHeight;
+            }
+        });
+
+        // Dark Mode Toggle Script
+        document.getElementById("toggle").addEventListener("click", function() {
+            document.body.classList.toggle("light-mode");
+        });
+    </script>
+</body>
+</html>
